@@ -42,15 +42,14 @@ textarea {
 
 .header-meta {
   position: relative;
-  height: 54px;
-  border-bottom: 1px solid rgba(121, 83, 38, 0.2);
+  height: 78px;
   color: #705737;
   font-size: 9px;
 }
 
 .publication-name {
   position: absolute;
-  top: 20px;
+  top: 13px;
   left: 0;
   font-weight: bold;
   letter-spacing: 0.04em;
@@ -58,15 +57,33 @@ textarea {
 
 .tagline {
   position: absolute;
-  top: 8px;
+  top: 13px;
   right: 0;
   width: 220px;
   text-align: right;
 }
 
+.search-rule {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 0;
+  margin: 0;
+  border: 0;
+  border-top: 1px solid rgba(121, 83, 38, 0.32);
+}
+
+.search-rule-top {
+  top: 33px;
+}
+
+.search-rule-bottom {
+  top: 67px;
+}
+
 .search-form {
   position: absolute;
-  top: 29px;
+  top: 40px;
   right: 0;
   display: flex;
   justify-content: flex-end;
@@ -482,13 +499,13 @@ textarea {
 
   .site-header {
     height: auto;
-    min-height: 126px;
+    min-height: 150px;
     padding-bottom: 10px;
   }
 
   .header-meta {
     height: auto;
-    min-height: 52px;
+    min-height: 78px;
   }
 
   .site-logo {
