@@ -289,12 +289,159 @@ textarea {
   box-shadow: 0 3px 10px rgba(106, 74, 32, 0.12);
 }
 
+.media-card {
+  padding: 9px 34px 16px;
+  background: rgba(255, 253, 247, 0.94);
+  box-shadow: 0 3px 10px rgba(106, 74, 32, 0.12);
+}
+
 .register-card h1 {
   margin: 0 0 11px;
   color: #775d37;
   font-size: 23px;
   font-weight: normal;
   line-height: 1.25;
+}
+
+.media-card h1 {
+  margin: 0 0 11px;
+  color: #775d37;
+  font-size: 23px;
+  font-weight: normal;
+  line-height: 1.25;
+}
+
+.media-breadcrumb {
+  margin: 0 0 20px;
+  color: #8a775a;
+  font-size: 10px;
+}
+
+.media-item {
+  margin: 0;
+}
+
+.media-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  background: #d5d1c5;
+}
+
+.media-item figcaption {
+  margin-top: 5px;
+  color: #6d5c47;
+  font-size: 10px;
+  line-height: 1.45;
+}
+
+.media-section {
+  margin-top: 17px;
+}
+
+.media-section h2 {
+  margin: 0 0 10px;
+  color: #514536;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.media-section p {
+  margin: 0 0 10px;
+  color: #6d5c47;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.video-poster {
+  position: relative;
+  overflow: hidden;
+  background: #111;
+  border: 1px solid #777;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 42px;
+  height: 42px;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -50%);
+}
+
+.play-button::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-left: 13px solid #fff;
+}
+
+.video-controls {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 23px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 9px;
+  background: rgba(0, 0, 0, 0.82);
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+}
+
+.video-play-icon {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 7px solid #fff;
+}
+
+.video-progress {
+  height: 3px;
+  flex: 1;
+  background: #9b9b9b;
+}
+
+.video-progress span {
+  display: block;
+  width: 12%;
+  height: 100%;
+  background: #ddd;
+}
+
+.video-volume {
+  font-size: 13px;
+}
+
+.podcast-player {
+  display: block;
+  width: min(100%, 360px);
+  height: 36px;
+  margin: 0 auto;
+}
+
+.map-frame {
+  height: 250px;
+  border: 1px solid #bcb6aa;
+  background: #dce7d9;
+}
+
+.map-frame svg {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .intro {
@@ -551,6 +698,11 @@ textarea {
     padding-left: 20px;
   }
 
+  .media-card {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
   .form-field {
     margin-bottom: 20px;
   }
@@ -597,7 +749,15 @@ textarea {
     padding: 12px 12px 15px;
   }
 
+  .media-card {
+    padding: 12px 12px 15px;
+  }
+
   .register-card h1 {
+    font-size: 20px;
+  }
+
+  .media-card h1 {
     font-size: 20px;
   }
 
