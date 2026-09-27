@@ -1,12 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Welcome to my free websites</h1>
-    <a href="register.html">register</a>
-</body>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tin tức, câu chuyện và hình ảnh từ cộng đồng FunnyMoments." />
+    <title>Blatletterpress | FunnyMoments</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <div class="home-site">
+      <header class="home-header">
+        <div class="home-header-meta">
+          <a class="home-publication" href="index.html">Blatletterpress</a>
+          <p class="home-tagline">Your online source of trusted news</p>
+          <form class="home-search" role="search">
+            <label class="visually-hidden" for="home-search-input">Tìm kiếm bài viết</label>
+            <input id="home-search-input" type="search" placeholder="Nhập nội dung tìm kiếm" />
+            <button type="button">Tìm</button>
+          </form>
+        </div>
+        <a class="home-logo" href="index.html" aria-label="Blatletterpress home">BLP</a>
+      </header>
+
+      <main class="home-layout">
+        <aside class="home-sidebar">
+          <nav class="home-nav" aria-label="Điều hướng chính">
+            <a class="is-current" href="index.html">Trang chủ</a>
+            <a href="#">Giới thiệu</a>
+            <a href="news.html">Tin tức</a>
+            <a href="register.html">Đăng ký</a>
+          </nav>
+
+          <section class="home-social">
+            <h2>Kết nối với chúng tôi</h2>
+            <div class="home-social-links">
+              <a href="#" aria-label="Twitter">t</a>
+              <a href="#" aria-label="Facebook">f</a>
+              <a href="#" aria-label="Instagram">◎</a>
+            </div>
+          </section>
+
+          <section class="home-sidebar-stories">
+            <h2>Tin nổi bật</h2>
+            <article>
+              <h3>Hẹn nhau cuối tuần</h3>
+              <p>Cùng khám phá những hoạt động mới và lưu lại khoảnh khắc đẹp.</p>
+              <a href="news.html">Xem bài viết</a>
+            </article>
+            <article>
+              <h3>Góc nhìn cộng đồng</h3>
+              <p>Những câu chuyện nhỏ tạo nên một ngày thật đáng nhớ.</p>
+              <a href="news.html">Xem bài viết</a>
+            </article>
+            <a class="home-more-link" href="news.html">Khám phá thêm</a>
+          </section>
+        </aside>
+
+        <section class="home-main">
+          <article class="featured-story">
+            <a class="featured-image-link" href="media.html" aria-label="Xem câu chuyện Ngày hội kết nối">
+              <img
+                class="featured-image"
+                src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1200&q=85"
+                alt="Những người bạn cùng chia sẻ khoảnh khắc vui vẻ"
+              />
+            </a>
+            <div class="story-thumbnails" aria-label="Một số hình ảnh cộng đồng">
+              <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=180&q=75" alt="Nhóm bạn ngoài trời" />
+              <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=180&q=75" alt="Buổi trò chuyện cộng đồng" />
+              <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=180&q=75" alt="Mọi người cùng làm việc" />
+              <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=180&q=75" alt="Sự kiện đông vui" />
+              <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=180&q=75" alt="Khoảnh khắc bên bạn bè" />
+              <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=180&q=75" alt="Buổi gặp gỡ ngoài trời" />
+            </div>
+            <div class="story-copy">
+              <p class="story-kicker">Câu chuyện cộng đồng · 27.09.2026</p>
+              <h1>Những cuộc gặp gỡ làm ngày thường thêm đáng nhớ</h1>
+              <p>
+                Từ một lời rủ rê giản dị đến một buổi gặp mặt đầy tiếng cười, mỗi khoảnh
+                khắc đều trở thành một câu chuyện để nhớ. Cùng FunnyMoments khám phá những
+                hoạt động mới, gặp gỡ những người bạn thú vị và chia sẻ niềm vui của bạn.
+              </p>
+              <p>
+                Trên trang này, chúng mình tổng hợp tin tức, hình ảnh và cảm hứng từ cộng
+                đồng. Hãy ghé xem những câu chuyện mới nhất và đăng ký để nhận cập nhật
+                cho các sự kiện sắp tới.
+              </p>
+              <a class="story-read-more" href="media.html">Khám phá câu chuyện <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <footer class="home-footer">
+        <div class="home-footer-grid">
+          <section class="home-footer-item">
+            <div class="home-footer-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M6 23 24 8l18 15M11 21v19h11V28h5v12h10V21" /></svg>
+            </div>
+            <h2>Gặp gỡ</h2>
+            <p>Khám phá những hoạt động thú vị và kết nối với mọi người quanh bạn.</p>
+          </section>
+          <section class="home-footer-item">
+            <div class="home-footer-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><rect x="9" y="11" width="30" height="27" rx="3" /><path d="M16 7v8M32 7v8M9 20h30M16 27h6M27 27h6M16 33h6" /></svg>
+            </div>
+            <h2>Sự kiện</h2>
+            <p>Theo dõi lịch hẹn, buổi gặp mặt và những trải nghiệm sắp diễn ra.</p>
+          </section>
+          <section class="home-footer-item">
+            <div class="home-footer-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="18" /><path d="M6 24h36M24 6c6 5 9 11 9 18s-3 13-9 18c-6-5-9-11-9-18s3-13 9-18Z" /></svg>
+            </div>
+            <h2>Chia sẻ</h2>
+            <p>Lưu lại khoảnh khắc đẹp và truyền cảm hứng tích cực đến cộng đồng.</p>
+          </section>
+          <section class="home-footer-item">
+            <div class="home-footer-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M9 34 13 39l5-2L40 15l-7-7L9 32v2ZM29 12l7 7M8 41l7-2" /></svg>
+            </div>
+            <h2>Cập nhật</h2>
+            <p>Đăng ký nhận tin để không bỏ lỡ thông báo và nội dung mới.</p>
+          </section>
+        </div>
+        <p class="home-copyright">© 2026 FunnyMoments. Cùng lưu giữ những khoảnh khắc đẹp.</p>
+      </footer>
+    </div>
+  </body>
 </html>
