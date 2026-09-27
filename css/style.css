@@ -191,6 +191,10 @@ a.sitename {
 #contents p a:hover {
 	color: #e19320;
 }
+#contents b {
+	display: block;
+	text-align: center;
+}
 /** MAIN **/
 #main {
 	float: right;
@@ -202,6 +206,84 @@ a.sitename {
 }
 #main div.body {
 	padding: 0 30px;
+}
+.media-gallery {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 18px 14px;
+	margin: 0 0 30px;
+}
+.media-gallery figure {
+	margin: 0;
+}
+.media-gallery img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.media-gallery figcaption {
+	color: #7e501c;
+	font-size: 12px;
+	line-height: 18px;
+	padding-top: 5px;
+}
+.media-code {
+	background-color: #f4ead7;
+	border-left: 4px solid #be841f;
+	color: #525252;
+	font-size: 12px;
+	line-height: 20px;
+	overflow-x: auto;
+	padding: 10px;
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+/** Registration form **/
+#register-form fieldset {
+	margin: 0 0 8px;
+	padding: 0 12px 12px;
+}
+#register-form .register-field {
+	margin: 8px 0 26px;
+}
+#register-form .register-field > label:first-child,
+#register-form .register-label {
+	display: block;
+	color: #525252;
+	font-size: 14px;
+	line-height: 24px;
+}
+#register-form input[type="text"],
+#register-form input[type="email"],
+#register-form input[type="password"],
+#register-form input[type="tel"] {
+	box-sizing: border-box;
+	width: 163px;
+}
+#register-form input[type="number"] {
+	width: 60px;
+}
+#register-form .inline-option {
+	color: #525252;
+	font-size: 14px;
+	line-height: 24px;
+	margin-right: 4px;
+}
+#register-form .inline-option input,
+#register-form .register-terms input {
+	margin: 0 3px 0 4px;
+}
+#register-form textarea {
+	box-sizing: border-box;
+	width: 291px;
+	max-width: 100%;
+}
+#register-form .register-actions button {
+	margin-right: 4px;
+}
+#register-form button.btn {
+	border: 0;
+	padding: 0;
 }
 /** list **/
 #list {
@@ -476,4 +558,12 @@ a.sitename {
 	margin: 0 auto;
 	padding: 34px 0;
 	text-align: center;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+video {
+	width: 100%;
+    height: auto;
 }
