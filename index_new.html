@@ -3,48 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Tin tức, câu chuyện và hình ảnh từ cộng đồng FunnyMoments." />
+    <meta
+      name="description"
+      content="Tin tức, câu chuyện và hình ảnh từ cộng đồng FunnyMoments."
+    />
+    <meta
+      name="keywords"
+      content="FunnyMoments, cộng đồng, sự kiện, tin tức, hình ảnh, kết nối"
+    />
     <title>Blatletterpress | FunnyMoments</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/index-new.css" />
   </head>
   <body>
-    <div class="home-site">
+    <section class="home-site" aria-label="Blatletterpress">
       <header class="home-header">
-        <div class="home-header-meta">
-          <a class="home-publication" href="index.html">Blatletterpress</a>
+        <section class="home-header-meta" aria-label="Thông tin trang">
+          <a class="home-publication" href="index_new.html">Blatletterpress</a>
           <p class="home-tagline">Your online source of trusted news</p>
           <form class="home-search" role="search">
             <label class="visually-hidden" for="home-search-input">Tìm kiếm bài viết</label>
             <input id="home-search-input" type="search" placeholder="Nhập nội dung tìm kiếm" />
             <button type="button">Tìm</button>
           </form>
-        </div>
-        <a class="home-logo" href="index.html" aria-label="Blatletterpress home">BLP</a>
+        </section>
+        <a class="home-logo" href="index_new.html" aria-label="Blatletterpress home">BLP</a>
       </header>
 
-      <main class="home-layout">
+      <main class="home-layout" id="main">
         <aside class="home-sidebar">
           <nav class="home-nav" aria-label="Điều hướng chính">
-            <a class="is-current" href="index.html">HOME</a>
+            <a class="is-current" href="index_new.html" aria-current="page">HOME</a>
             <a href="#">ABOUT</a>
             <a href="news.html">NEWS</a>
             <a href="#">BLOG</a>
           </nav>
 
-          <section class="home-social">
-            <h2>Connect with us:</h2>
-            <div class="home-social-links">
+          <section class="home-social" aria-labelledby="social-heading">
+            <h2 id="social-heading">Connect with us:</h2>
+            <nav class="home-social-links" aria-label="Mạng xã hội">
               <a href="#" aria-label="Twitter">t</a>
               <a href="#" aria-label="Facebook">f</a>
               <a href="#" aria-label="Instagram">◎</a>
-            </div>
+            </nav>
           </section>
 
-          <section class="home-sidebar-stories">
-            <h2>Placeholder</h2>
+          <section class="home-sidebar-stories" aria-labelledby="featured-news-heading">
+            <h2 id="featured-news-heading">Placeholder</h2>
             <article>
               <h3>Title Sample One</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend ligula vel velit varius.</p>
@@ -59,8 +70,8 @@
           </section>
         </aside>
 
-        <section class="home-main">
-          <article class="featured-story">
+        <section class="home-main" aria-label="Câu chuyện nổi bật">
+          <article class="featured-story body">
             <a class="featured-image-link" href="media.html" aria-label="Xem câu chuyện Ngày hội kết nối">
               <img
                 class="featured-image"
@@ -68,15 +79,33 @@
                 alt="Những người bạn cùng chia sẻ khoảnh khắc vui vẻ"
               />
             </a>
-            <div class="story-thumbnails" aria-label="Một số hình ảnh cộng đồng">
-              <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=180&q=75" alt="Nhóm bạn ngoài trời" />
-              <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=180&q=75" alt="Buổi trò chuyện cộng đồng" />
-              <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=180&q=75" alt="Mọi người cùng làm việc" />
-              <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=180&q=75" alt="Sự kiện đông vui" />
-              <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=180&q=75" alt="Khoảnh khắc bên bạn bè" />
-              <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=180&q=75" alt="Buổi gặp gỡ ngoài trời" />
-            </div>
-            <div class="story-copy">
+            <section class="story-thumbnails" aria-label="Một số hình ảnh cộng đồng">
+              <img
+                src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=180&q=75"
+                alt="Nhóm bạn cùng vui chơi ngoài trời"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=180&q=75"
+                alt="Mọi người trò chuyện tại một buổi gặp mặt"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=180&q=75"
+                alt="Các thành viên cùng làm việc trong nhóm"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=180&q=75"
+                alt="Khung cảnh một sự kiện cộng đồng"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=180&q=75"
+                alt="Bạn bè cùng lưu lại khoảnh khắc vui vẻ"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=180&q=75"
+                alt="Mọi người gặp gỡ trong không gian ngoài trời"
+              />
+            </section>
+            <section class="story-copy" aria-label="Nội dung câu chuyện">
               <p class="story-kicker">01-01-2012</p>
               <h1>NEWS TITLE ONE</h1>
               <p>
@@ -89,45 +118,47 @@
                 dapibus, felis eget ornare ultrices, est est imperdiet magna, id ultrices
                 odio leo sed erat. Maecenas nec est egestas ipsum bibendum iaculis.
               </p>
-              <a class="story-read-more" href="media.html">Read more &gt;&gt;</a>
-            </div>
+              <a class="story-read-more" href="media.html">
+                Read more &gt;&gt;
+              </a>
+            </section>
           </article>
         </section>
       </main>
 
       <footer class="home-footer">
-        <div class="home-footer-grid">
-          <section class="home-footer-item">
-            <div class="home-footer-icon" aria-hidden="true">
+        <section class="home-footer-grid" aria-label="Các nội dung chính">
+          <article class="home-footer-item">
+            <span class="home-footer-icon" aria-hidden="true">
               <svg viewBox="0 0 48 48"><path d="M6 23 24 8l18 15M11 21v19h11V28h5v12h10V21" /></svg>
-            </div>
+            </span>
             <h2>Lorem ipsum</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod.</p>
-          </section>
-          <section class="home-footer-item">
-            <div class="home-footer-icon" aria-hidden="true">
+          </article>
+          <article class="home-footer-item">
+            <span class="home-footer-icon" aria-hidden="true">
               <svg viewBox="0 0 48 48"><rect x="9" y="11" width="30" height="27" rx="3" /><path d="M16 7v8M32 7v8M9 20h30M16 27h6M27 27h6M16 33h6" /></svg>
-            </div>
+            </span>
             <h2>Lorem ipsum</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod.</p>
-          </section>
-          <section class="home-footer-item">
-            <div class="home-footer-icon" aria-hidden="true">
+          </article>
+          <article class="home-footer-item">
+            <span class="home-footer-icon" aria-hidden="true">
               <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="18" /><path d="M6 24h36M24 6c6 5 9 11 9 18s-3 13-9 18c-6-5-9-11-9-18s3-13 9-18Z" /></svg>
-            </div>
+            </span>
             <h2>Lorem ipsum</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod.</p>
-          </section>
-          <section class="home-footer-item">
-            <div class="home-footer-icon" aria-hidden="true">
+          </article>
+          <article class="home-footer-item">
+            <span class="home-footer-icon" aria-hidden="true">
               <svg viewBox="0 0 48 48"><path d="M9 34 13 39l5-2L40 15l-7-7L9 32v2ZM29 12l7 7M8 41l7-2" /></svg>
-            </div>
+            </span>
             <h2>Lorem ipsum</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod.</p>
-          </section>
-        </div>
+          </article>
+        </section>
         <p class="home-copyright">© Copyright 2026. Company name. All rights reserved.</p>
       </footer>
-    </div>
+    </section>
   </body>
 </html>
